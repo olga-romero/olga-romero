@@ -1,0 +1,74 @@
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 40px;
+  height: 180px;
+  background: linear-gradient(to bottom, #a66a3f, transparent);
+  position: relative;
+  z-index: 100;
+  top: -120px;
+  animation: moverArribaAbajo 2s ease-in-out infinite;
+}
+
+@keyframes moverArribaAbajo {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.cover {
+  object-fit: cover;
+  display: block;
+  width: 80% !important;
+  height: 80% !important;
+}
+
+.experience-company-logo {
+  width: 55%;
+  height: auto;
+}
+
+.projects-logo {
+  width: 100%;
+  height: auto;
+}
+
+.rounded-4 {
+  border-radius: var(--bs-border-radius-xl) !important;
+}
+
+.title {
+  color: white !important;
+}
+
+.subtitle {
+  color: #a66a3f !important;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.description {
+  color: #8f8f8f !important;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.portfolio-image {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
